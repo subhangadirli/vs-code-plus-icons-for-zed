@@ -1,4 +1,22 @@
 # Vs Code+ Icons
+<h1 align="center">
+  <br>
+    <img src="icon.png" alt="logo" width="200">
+  <br><br>
+  Icons
+  <br>
+  <br>
+</h1>
+
+<h4 align="center">Get the Icons into your VS Code.</h4>
+
+<p align="center">
+    <a href="https://marketplace.visualstudio.com/items?itemName=yusifaliyevpro.vscicons"><img src="https://vsmarketplacebadges.dev/version-short/yusifaliyevpro.vscicons.jpg?style=for-the-badge&colorA=252526&colorB=1B9AAA&label=VERSION" alt="Version"></a>&nbsp;
+    <a href="https://marketplace.visualstudio.com/items?itemName=yusifaliyevpro.vscicons"><img src="https://vsmarketplacebadges.dev/rating-short/yusifaliyevpro.vscicons.jpg?style=for-the-badge&colorA=252526&colorB=1B9AAA&label=Rating" alt="Rating"></a>&nbsp;
+    <a href="https://marketplace.visualstudio.com/items?itemName=yusifaliyevpro.vscicons"><img src="https://vsmarketplacebadges.dev/installs-short/yusifaliyevpro.vscicons.jpg?style=for-the-badge&colorA=252526&colorB=1B9AAA&label=Installs" alt="Installs"></a>&nbsp;
+    <a href="https://marketplace.visualstudio.com/items?itemName=yusifaliyevpro.vscicons"><img src="https://vsmarketplacebadges.dev/downloads-short/yusifaliyevpro.vscicons.jpg?style=for-the-badge&colorA=252526&colorB=1B9AAA&label=Downloads" alt="Downloads"></a>
+</p>
+
 
 A port of [yusifaliyevpro/vscode-icons](https://github.com/yusifaliyevpro/vscode-icons) to Zed editor. 800+ beautiful file and folder icons.
 
@@ -9,6 +27,14 @@ A port of [yusifaliyevpro/vscode-icons](https://github.com/yusifaliyevpro/vscode
 - 🎯 **Smart Folder Detection** — 591 named folder patterns with open/closed states
 - 📦 **Complete Coverage** — file extensions, file names, and folder types
 - ✨ **Pixel Perfect** — optimized for Zed's icon rendering
+
+## File icons
+
+<img src="./fileIcons.png" alt="file icons">
+
+### Folder icons
+
+<img src="./folderIcons.png" alt="folder icons">
 
 ## Installation
 

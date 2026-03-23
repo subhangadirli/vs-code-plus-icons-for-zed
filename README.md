@@ -1,68 +1,76 @@
-<h1 align="center">
-  <br>
-    <img src="icon.png" alt="logo" width="200">
-  <br><br>
-  Icons
-  <br>
-  <br>
-</h1>
+# Icons for Zed
 
-<h4 align="center">Get the Icons into your VS Code.</h4>
+A port of [yusifaliyevpro/vscode-icons](https://github.com/yusifaliyevpro/vscode-icons) to Zed editor. 800+ beautiful file and folder icons.
 
-<p align="center">
-    <a href="https://marketplace.visualstudio.com/items?itemName=yusifaliyevpro.vscicons"><img src="https://vsmarketplacebadges.dev/version-short/yusifaliyevpro.vscicons.jpg?style=for-the-badge&colorA=252526&colorB=1B9AAA&label=VERSION" alt="Version"></a>&nbsp;
-    <a href="https://marketplace.visualstudio.com/items?itemName=yusifaliyevpro.vscicons"><img src="https://vsmarketplacebadges.dev/rating-short/yusifaliyevpro.vscicons.jpg?style=for-the-badge&colorA=252526&colorB=1B9AAA&label=Rating" alt="Rating"></a>&nbsp;
-    <a href="https://marketplace.visualstudio.com/items?itemName=yusifaliyevpro.vscicons"><img src="https://vsmarketplacebadges.dev/installs-short/yusifaliyevpro.vscicons.jpg?style=for-the-badge&colorA=252526&colorB=1B9AAA&label=Installs" alt="Installs"></a>&nbsp;
-    <a href="https://marketplace.visualstudio.com/items?itemName=yusifaliyevpro.vscicons"><img src="https://vsmarketplacebadges.dev/downloads-short/yusifaliyevpro.vscicons.jpg?style=for-the-badge&colorA=252526&colorB=1B9AAA&label=Downloads" alt="Downloads"></a>
-</p>
+## Features
 
-> **Originally created by [Mhammed Talhaouy (@tal7aouy)](https://github.com/tal7aouy)** — [original repository](https://github.com/tal7aouy/vscode-icons).
->
-> This extension is now maintained by **[yusifaliyevpro](https://github.com/yusifaliyevpro)**. Contributions and PRs are welcome!
-
-## Contributing
-
-Missing an icon for your favorite language or tool? You can add it yourself! Check out the [Contributing Guide](CONTRIBUTING.md) to learn how to add new file or folder icons and open a PR.
-
-## File icons
-
-<img src="./images/fileIcons.png" alt="file icons">
-
-### Folder icons
-
-<img src="./images/folderIcons.png" alt="folder icons">
+- 🎨 **750+ SVG Icons** for files, folders, and programming languages
+- 🚀 **Zero Dependencies** — pure SVG icons, no bloat
+- 🎯 **Smart Folder Detection** — 591 named folder patterns with open/closed states
+- 📦 **Complete Coverage** — file extensions, file names, and folder types
+- ✨ **Pixel Perfect** — optimized for Zed's icon rendering
 
 ## Installation
 
-1. Open the extensions sidebar on Visual Studio Code
-1. Search for **Icons (Maintained)**
-1. Click Install
-1. Click Reload to reload your editor
-1. Select the Manage Cog (bottom left) > File Icon Theme ＞ **Icons**
-1. 🌟🌟🌟🌟🌟 Rate five-stars 😃
+### From Zed Extensions
 
-## How to use
+1. Open **Zed** and press `Ctrl+Shift+X` (or `Cmd+Shift+X` on macOS)
+2. Search for **"Icons for Zed"**
+3. Click **Install**
+4. Open settings (`Ctrl+,` or `Cmd+,`)
+5. Add:
+   ```json
+   "icon_theme": "Icons for Zed"
+   ```
 
-After installation and activation, you should go in settings (`File` → `Preferences` on Windows, or `Code` → `Preferences` on OSX), choose `File Icon Theme`, and select `Icons`.
+### Manual Installation (Dev Extension)
 
-## Want more?
+```bash
+git clone https://github.com/subhangadirli/icons-for-zed.git
+cd icons-for-zed
+```
 
-I can add more icons if you need, [open a **new** issue](https://github.com/yusifaliyevpro/vscode-icons/issues) to ask which extension you want.
+Then in Zed:
+1. Press `Ctrl+Shift+X`
+2. Paste the full path to `./zed-extension`
+3. Click **Install**
+4. Set in settings:
+   ```json
+   "icon_theme": "Icons for Zed"
+   ```
 
-## Changelog
+## Repository Structure
 
-[See full changelog here](https://github.com/yusifaliyevpro/vscode-icons/blob/main/CHANGELOG.md)
+```
+icons-for-zed/
+├── icons/                    # 750+ SVG icon files
+├── zed-extension/            # Zed extension directory
+│   ├── extension.toml        # Extension metadata
+│   ├── generate_zed_theme.js # Theme generator script
+│   ├── icon_themes/          # Generated theme JSON
+│   └── icons/                # Symlink to ../icons
+├── LICENSE                   # MIT License
+└── README.md                 # This file
+```
 
-## Icon sources
+## Icon Coverage
 
-- [Material Design Icons](https://materialdesignicons.com/)
-- official icons
+- **File Extensions**: 685+ file types (js, py, rs, go, java, etc.)
+- **File Names**: 794+ specific files (Dockerfile, Makefile, package.json, etc.)
+- **Folder Names**: 591+ folder patterns (src, dist, node_modules, .git, etc.)
+- **Folder States**: Both collapsed and expanded states for all folders
 
-### Contributors
+## Credits
 
-This project exists thanks to all the people who contribute.
+**Original Icons**: Created by [yusifaliyevpro](https://github.com/yusifaliyevpro)  
+**Zed Port**: [Subhan Gadirli](https://github.com/subhangadirli)
 
-<a href="https://github.com/yusifaliyevpro/vscode-icons/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=yusifaliyevpro/vscode-icons"/>
+## License
 
-</a>
+MIT License — See [LICENSE](LICENSE) for details.
+
+## Links
+
+- [Original VS Code Extension](https://github.com/yusifaliyevpro/vscode-icons)
+- [Zed Editor](https://zed.dev)
+- [Zed Extensions Registry](https://github.com/zed-industries/extensions)

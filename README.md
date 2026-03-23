@@ -60,6 +60,16 @@ vs-code-plus-icons-for-zed/
 - **Folder Names**: 591+ folder patterns (src, dist, node_modules, .git, etc.)
 - **Folder States**: Both collapsed and expanded states for all folders
 
+## Contributing
+
+This is a port that automatically syncs icons from the original VS Code extension. 
+
+If you would like to request a new icon or contribute a new icon, **please open an issue or pull request in the upstream repository:**
+
+👉 [yusifaliyevpro/vscode-icons](https://github.com/yusifaliyevpro/vscode-icons)
+
+Once added there, it will be automatically synced to this Zed extension!
+
 ## Credits
 
 **Original Icons**: Created by [yusifaliyevpro](https://github.com/yusifaliyevpro)  

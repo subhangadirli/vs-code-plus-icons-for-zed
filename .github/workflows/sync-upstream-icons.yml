@@ -1,0 +1,70 @@
+name: Sync Upstream Icons
+
+on:
+  schedule:
+    # Run automatically every Sunday at midnight
+    - cron: '0 0 * * 0'
+  workflow_dispatch: # Allow manual trigger from GitHub Actions UI
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v4
+
+      - name: Checkout upstream repository
+        uses: actions/checkout@v4
+        with:
+          repository: yusifaliyevpro/vscode-icons
+          path: upstream
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Sync icons and mapping sources
+        run: |
+          # Copy new and updated SVG icons
+          rsync -av upstream/icons/ icons/
+
+          # Copy icon mapping definitions
+          rsync -av upstream/src/ src/
+
+          # Remove upstream clone so it isn't included in the commit
+          rm -rf upstream/
+
+      - name: Build and generate Zed theme
+        run: |
+          # Install dependencies (typescript, etc.)
+          npm install
+
+          # Compile the synced TS source and generate the VS Code icons.json
+          npm run build
+
+          # Convert the VS Code icons.json to the Zed extension schema
+          node zed-extension/generate_zed_theme.js
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: sync upstream icons and regenerate zed theme"
+          title: "🔄 Sync upstream icons from yusifaliyevpro/vscode-icons"
+          body: |
+            This PR automatically syncs the latest icons and mappings from the upstream repository.
+
+            - Synced latest SVG assets from `icons/`
+            - Synced upstream mapping source files in `src/`
+            - Regenerated `vscode-icons.json` for Zed
+
+            Review the files changed to verify the new icons.
+          branch: sync-upstream-icons
+          base: main
+          delete-branch: true

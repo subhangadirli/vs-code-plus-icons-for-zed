@@ -1,7 +1,7 @@
-id = "icons-for-zed"
-name = "Icons for Zed"
+id = "vs-code-plus-icons"
+name = "Vs Code+ Icons"
 version = "1.0.0"
 schema_version = 1
 authors = ["subhangadirli <subhanqedirli@protonmail.com>"]
 description = "Port of yusifaliyevpro/vscode-icons for Zed. 800+ file and folder icons."
-repository = "https://github.com/subhangadirli/icons-for-zed.git"
+repository = "https://github.com/subhangadirli/vs-code-plus-icons-for-zed.git"

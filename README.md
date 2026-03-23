@@ -1,4 +1,4 @@
-# Icons for Zed
+# Vs Code+ Icons
 
 A port of [yusifaliyevpro/vscode-icons](https://github.com/yusifaliyevpro/vscode-icons) to Zed editor. 800+ beautiful file and folder icons.
 
@@ -15,19 +15,19 @@ A port of [yusifaliyevpro/vscode-icons](https://github.com/yusifaliyevpro/vscode
 ### From Zed Extensions
 
 1. Open **Zed** and press `Ctrl+Shift+X` (or `Cmd+Shift+X` on macOS)
-2. Search for **"Icons for Zed"**
+2. Search for **"Vs Code+ Icons"**
 3. Click **Install**
 4. Open settings (`Ctrl+,` or `Cmd+,`)
 5. Add:
    ```json
-   "icon_theme": "Icons for Zed"
+   "icon_theme": "Vs Code+ Icons"
    ```
 
 ### Manual Installation (Dev Extension)
 
 ```bash
-git clone https://github.com/subhangadirli/icons-for-zed.git
-cd icons-for-zed
+git clone https://github.com/subhangadirli/vs-code-plus-icons-for-zed.git
+cd vs-code-plus-icons-for-zed
 ```
 
 Then in Zed:
@@ -36,13 +36,13 @@ Then in Zed:
 3. Click **Install**
 4. Set in settings:
    ```json
-   "icon_theme": "Icons for Zed"
+   "icon_theme": "Vs Code+ Icons"
    ```
 
 ## Repository Structure
 
 ```
-icons-for-zed/
+vs-code-plus-icons-for-zed/
 ├── icons/                    # 750+ SVG icon files
 ├── zed-extension/            # Zed extension directory
 │   ├── extension.toml        # Extension metadata

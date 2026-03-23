@@ -1,0 +1,12 @@
+{
+  "name": "vs-code-plus-icons",
+  "version": "1.0.0",
+  "description": "Port of yusifaliyevpro/vscode-icons for Zed. 800+ file and folder icons.",
+  "scripts": {
+    "build": "tsc && node ./out/extension.js"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "^5.9.3"
+  }
+}

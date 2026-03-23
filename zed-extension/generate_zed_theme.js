@@ -308,11 +308,11 @@ function build() {
 
   const theme = {
     $schema: "https://zed.dev/schema/icon_themes/v0.3.0.json",
-    name: "Icons for Zed",
+    name: "Vs Code+ Icons",
     author: "subhangadirli",
     themes: [
       {
-        name: "Icons for Zed",
+        name: "Vs Code+ Icons",
         appearance: "dark",
         directory_icons,
         named_directory_icons,

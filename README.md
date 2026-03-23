@@ -1,9 +1,8 @@
-# Vs Code+ Icons
 <h1 align="center">
   <br>
     <img src="icon.png" alt="logo" width="200">
   <br><br>
-  Icons
+  Vs Code+ Icons
   <br>
   <br>
 </h1>

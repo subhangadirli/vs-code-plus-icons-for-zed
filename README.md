@@ -2,12 +2,12 @@
   <br>
     <img src="icon.png" alt="logo" width="200">
   <br><br>
-  Vs Code+ Icons
+  VS Code+ Icons
   <br>
   <br>
 </h1>
 
-<h4 align="center">Get the Vs Code+ Icons into your Zed code editor.</h4>
+<h4 align="center">Get the VS Code+ Icons into your Zed code editor.</h4>
 
 <p align="center">
     <a href="https://marketplace.visualstudio.com/items?itemName=yusifaliyevpro.vscicons"><img src="https://vsmarketplacebadges.dev/version-short/yusifaliyevpro.vscicons.jpg?style=for-the-badge&colorA=252526&colorB=1B9AAA&label=VERSION" alt="Version"></a>&nbsp;

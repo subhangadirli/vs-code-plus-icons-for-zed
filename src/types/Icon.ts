@@ -1,5 +1,5 @@
 export interface Icon {
-  [key: string]: {
+  [x: string]: {
     iconPath: string;
   };
 }
